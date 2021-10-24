@@ -47,7 +47,7 @@ then
     command cd $WEB_PATH && npm init vite@latest vue --template vue && cd vue && npm install
 elif [[ $1 = $CMD_API_START_SERVER ]]
 then
-    command go run .
+    command export $(grep -v '^#' .env | xargs) && go run .
 elif [[ $1 = $CMD_WEB_BUILD ]]
 then
     echo mv $WEB_PATH_VUE/dist .webstatic
