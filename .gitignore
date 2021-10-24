@@ -1,0 +1,11 @@
+web/**/node_modules/
+web/**/.DS_Store
+web/**/dist
+web/**/dist-ssr
+web/**/.env
+
+.webstatic/
+.DS_Store
+.env
+
+gomodo
